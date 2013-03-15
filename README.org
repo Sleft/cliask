@@ -20,7 +20,7 @@ to clone the git repository into that directory. You can use the same command if
 
 ** Usage
 
-See the documentation in [[https://github.com/Sleft/cliask/blob/master/cliask.py][cliask.py]], especially the documention for =cliask.ask= and the example of usage in =cliask._test=.
+See the documentation in [[https://github.com/Sleft/cliask/blob/master/cliask.py][cliask.py]], especially the documention for =cliask.ask= and the example of usage in =cliask._test=. Run cliask.py, =python cliask.py=, to try the example of usage.
 
 ** Credits
 

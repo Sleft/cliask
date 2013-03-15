@@ -73,7 +73,7 @@ def _validate(validator, s):
     return False
 
 
-## Unit test.
+## Unit test by an example of usage.
 def _test():
     ## Checks if input is within a range.
     #  @param input Input string to check.
