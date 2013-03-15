@@ -88,6 +88,8 @@ def _test():
 
         return number in range(1, 11)
 
+    print('Please answer the following questions:')
+
     # If you use ask from another module you have to prefix it with
     # the module name.
     yn = ask('Yes or no? ',
@@ -105,6 +107,7 @@ def _test():
 
     q = ask('Why? ')
 
+    print('You answered:')
     print(yn)
     print(number)
     print(animal)
