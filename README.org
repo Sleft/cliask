@@ -1,0 +1,31 @@
+* [[https://github.com/Sleft/cliask][cliask]]
+
+A module for getting validated user input via the console. Contains the function =ask= which is similar to the function with the same name in [[http://highline.rubyforge.org/][HighLine]].
+
+** Installation
+
+The following describes two ways of installing. The first method requires that =git= is installed and the second does not.
+
+*** Git
+
+=cd= to the directory you want to install in and do
+#+BEGIN_EXAMPLE
+git clone https://github.com/Sleft/cliask.git .
+#+END_EXAMPLE
+to clone the git repository into that directory. You can use the same command if you want to update your installation.
+
+*** Archive
+
+[[https://github.com/Sleft/cliask/archive/master.zip][Download]] an archive and extract to the directory you want to install in.
+
+** Usage
+
+See the documentation in [[https://github.com/Sleft/cliask/blob/master/cliask.py][cliask.py]], especially the documention for =cliask.ask= and the example of usage in =cliask._test=.
+
+** Credits
+
+The code in the module was first posted as [[http://stackoverflow.com/a/14977144][an answer]] to [[http://stackoverflow.com/q/14962930][a question]].
+
+** License
+
+See [[https://github.com/Sleft/yasnippet-latex-mode/blob/master/LICENSE.org][LICENSE.org]].
