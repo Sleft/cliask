@@ -1,10 +1,10 @@
 * [[https://github.com/Sleft/cliask][cliask]]
 
-A module for getting validated user input via the console. Contains the function =ask= which is similar to the function with the same name in [[http://highline.rubyforge.org/][HighLine]].
+A Python module for getting validated user input via the console which is meant to ease the process of building command line interfaces. Provides the function =ask= which will ask for input until a valid response is given. The =ask= function is similar to and inspired by the function with the same name in the Ruby library [[http://highline.rubyforge.org/][HighLine]].
 
 ** Installation
 
-The following describes two ways of installing. The first method requires that =git= is installed and the second does not.
+The following describes two ways of installing. The first method requires that =git= is installed and the second does not. Either way the module has to be [[http://docs.python.org/3/tutorial/modules.html][imported]] for it to be used.
 
 *** Git
 
