@@ -28,8 +28,6 @@ import re
 def ask(question, default='', validator='',
         invalid_response=''):
 
-    answer = ''
-
     if default:
         question = '{} |{}| '.format(question.strip(), default)
 
