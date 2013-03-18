@@ -53,6 +53,36 @@ def ask(question, default='', validator='',
     return answer
 
 
+## Ask for yes or no until a valid response is given and return True
+#  if the answer is yes.
+#
+#  @param question         A string containing a question asking for
+#                          input.
+#  @param default          A default answer if the user gives no
+#                          answer (default: None).
+#  @param validator        A regex, function, tuple or list to
+#                          validate the question (default: a regex for
+#                          yes and no). If it is a regex the input
+#                          must match it to be validated. If it is a
+#                          function the function must take the input
+#                          as a parameter and return true if the input
+#                          is valid. If it is a tuple or a list the
+#                          input must be an element in it to valid.
+#  @param invalid_response A string containing the response to print
+#                          when invalid input is entered (default:
+#                          Please enter "yes" or "no").
+#  @return The validated input.
+def agree(question, default='', validator=r'(?i)y(?:es)?|no?\Z',
+          invalid_response='Please enter "yes" or "no"'):
+    if ask(question,
+           default=default,
+           validator=validator,
+           invalid_response=invalid_response)[0].lower() == 'y':
+        return True
+    else:
+        return False
+
+
 ## Returns true if the given validator validates the given input.
 #  @param validator See ask().
 #  @param s         Input string to validate.
@@ -90,10 +120,10 @@ def _test():
 
     # If you use ask from another module you have to prefix it with
     # the module name.
-    yn = ask('Yes or no? ',
-             validator=r'(?i)[yn]',
-             invalid_response='Answer y or n for yes or no',
-             default='y')
+    ynq = ask('Yes or no or quit? ',
+              validator=r'(?i)[ynq]',
+              invalid_response='Answer y or n for yes or no',
+              default='y')
 
     number = ask('A number between 1 and 10: ',
                  validator=in_range,
@@ -102,14 +132,16 @@ def _test():
     animal = ask('Cow or cat? ',
                  validator=('cow', 'cat'),
                  invalid_response='You must say cow or cat')
+    yn = agree('Yes or no? ')
 
     q = ask('Why? ')
 
     print('You answered:')
-    print(yn)
+    print(ynq)
     print(number)
     print(animal)
     print(q)
+    print(yn)
 
 if __name__ == '__main__':
     _test()
