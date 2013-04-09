@@ -72,7 +72,7 @@ def ask(question, default='', validator='',
 #                          when invalid input is entered (default:
 #                          Please enter "yes" or "no").
 #  @return The validated input.
-def agree(question, default='', validator=r'(?i)y(?:es)?|no?\Z',
+def agree(question, default='', validator=r'(?i)\Ay(?:es)?|no?\Z',
           invalid_response='Please enter "yes" or "no"'):
     if ask(question,
            default=default,
