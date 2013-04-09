@@ -4,7 +4,14 @@ A Python module for getting validated user input via the console which is meant 
 
 ** Installation
 
-The following describes two ways of installing. The first method requires that =git= is installed and the second does not. Either way the module has to be [[http://docs.python.org/3/tutorial/modules.html][imported]] for it to be used.
+To use cliask you need Python 3. The following describes two ways of installing. The first method requires that =git= is installed and the second does not. Either way the module has to be [[http://docs.python.org/3/tutorial/modules.html][imported]] for it to be used.
+
+*** pip
+
+Make sure you have =pip= installed then do the following:
+#+BEGIN_EXAMPLE
+sudo pip install cliask
+#+END_EXAMPLE
 
 *** Git
 
