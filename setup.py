@@ -6,7 +6,7 @@ if sys.version_info <= (3, 2, 3):
     sys.exit(-1)
 
 setup(name='cliask',
-      version='0.0.2',
+      version='0.0.3',
       py_modules=['cliask'],
       description="A module for getting validated user input via the console",
       author="Sleft",
@@ -26,7 +26,14 @@ setup(name='cliask',
         "Topic :: Software Development :: Libraries :: Python Modules"
         ],
       long_description="""\
-A Python module for getting validated user input via the console which is meant to ease the process of building command line interfaces. Provides the function ask which will ask for input until a valid response is given. Also provides the function agree which will ask for input until the answer is yes or no. Both functions are similar to and inspired by the functions with the same name in the Ruby library HighLine. The following code gives a peek of how the functions can be used:
+A Python module for getting validated user input via the console which
+is meant to ease the process of building command line
+interfaces. Provides the function ask which will ask for input until a
+valid response is given. Also provides the function agree which will
+ask for input until the answer is yes or no. Both functions are
+similar to and inspired by the functions with the same name in the
+Ruby library HighLine. The following code gives a peek of how the
+functions can be used:
 
 
   import cliask
