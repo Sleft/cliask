@@ -16,4 +16,4 @@ setup(name='cliask',
         "Topic :: Software Development :: User Interfaces",
         "Topic :: System :: Shells",
         "Topic :: Software Development :: Libraries :: Python Modules",
-        )
+        ])
