@@ -1,6 +1,17 @@
 * [[https://github.com/Sleft/cliask][cliask]]
 
-A Python module for getting validated user input via the console which is meant to ease the process of building command line interfaces. Provides the function =ask= which will ask for input until a valid response is given. The =ask= function is similar to and inspired by the function with the same name in the Ruby library [[http://highline.rubyforge.org/][HighLine]].
+A Python module for getting validated user input via the console which is meant to ease the process of building command line interfaces. Provides the function =ask= which will ask for input until a valid response is given. Also provides the function =agree= which will ask for input until the answer is yes or no. Both functions are similar to and inspired by the functions with the same name in the Ruby library [[http://highline.rubyforge.org/][HighLine]]. The following code gives a peek of how the functions can be used:
+#+BEGIN_EXAMPLE
+import cliask
+
+animal = cliask.ask('Cow or cat? ',
+                    validator=('cow', 'cat'),
+                    invalid_response='You must say cow or cat')
+yn = cliask.agree('Yes or no? ')
+
+print(animal)
+print(yn)
+#+END_EXAMPLE
 
 ** Installation
 
