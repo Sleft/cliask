@@ -118,8 +118,8 @@ def _test():
 
     print('Please answer the following questions:')
 
-    # If you use ask from another module you have to prefix it with
-    # the module name.
+    # If you use cliask from another module you have to prefix it with
+    # its module name, i.e. call cliask.ask and cliask.agree.
     ynq = ask('Yes or no or quit? ',
               validator=r'(?i)[ynq]',
               invalid_response='Answer y or n for yes or no',
